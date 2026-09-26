@@ -47,7 +47,6 @@
     }
     .navbar-links a { opacity: 0.7; transition: opacity 0.2s; }
     .navbar-links a:hover, .navbar-links a:first-child { opacity: 1; }
-
     /* ===== Banner轮播 ===== */
     .banner {
       position: relative;
@@ -143,7 +142,6 @@
     .dot.active {
       background: #fff;
     }
-
     /* ===== 快捷入口 ===== */
     .quick-links {
       display: flex;
@@ -670,7 +668,7 @@
   <div class="gift-overlay" id="giftOverlay" onclick="if(event.target===this)closeGift()">
     <div class="gift-content">
       <div class="gift-image" id="giftImageBox">
-        <img id="giftMainImg" src="85b2d3f9b8954ecaa78097323fbd2c60_2.jpg" alt="校园风景">
+        <img id="giftMainImg" src="3f53d8cb092e43eaa4f4c7e339b0c60a.jpg" alt="校园风景">
         <svg width="200" height="200" viewBox="0 0 200 200" fill="none">
           <rect width="200" height="200" fill="none" />
           <circle cx="100" cy="80" r="40" stroke="white" stroke-width="3" opacity="0.5" />
@@ -747,14 +745,14 @@
       document.getElementById('msgOverlay').classList.remove('active');
     }
 
-    //礼包弹窗：播放 bg1.mp3
+    //礼包弹窗：播放 bg1.mp3 【广播站，奶龙图A】
     function showGift() {
       closeMsg();
       //先停止另一首
       document.getElementById('holidayAudio').pause();
       document.getElementById('holidayAudio').currentTime = 0;
 
-      document.getElementById('giftMainImg').src = "85b2d3f9b8954ecaa78097323fbd2c60_2.jpg";
+      document.getElementById('giftMainImg').src = "3f53d8cb092e43eaa4f4c7e339b0c60a.jpg";
       document.getElementById('giftMainTitle').innerText = "欢迎来到铜仁职业技术大学";
       document.getElementById('giftMainSub').innerText = "正在为您播放校歌...";
       document.getElementById('giftOverlay').classList.add('active');
@@ -768,13 +766,13 @@
       })
     }
 
-    //放假通知弹窗：播放 bg2.mp3
+    //放假通知弹窗：播放 bg2.mp3 【放假通知，奶龙图B】
     function openHolidayNotice(){
       //先停止礼包那一首
       document.getElementById('giftAudio').pause();
       document.getElementById('giftAudio').currentTime = 0;
 
-      document.getElementById('giftMainImg').src = "b8234fd6e22f44ea9619b9651fde4c15_1.jpg";
+      document.getElementById('giftMainImg').src = "76a8d0cfe64545e2beca0d7d4a439ed1.png";
       document.getElementById('giftMainTitle').innerText = "2026中秋国庆放假通知";
       document.getElementById('giftMainSub').innerText = "十三天假期通知详情";
       document.getElementById('giftOverlay').classList.add('active');
